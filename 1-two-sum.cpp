@@ -10,13 +10,16 @@ class Solution {
 public:
   vector<int> twoSum(vector<int> &nums, int target) {
     // Loop through the vector adding each number to the rest
-    for (int i = 0; i < nums.size(); ++i)
+    for (int i = 0; i < nums.size(); ++i) {
       // j needs to always be one ahead of i
-      for (int j = i + 1; j < nums.size(); ++j)
+      for (int j = i + 1; j < nums.size(); ++j) {
         // If the numbers add to target, return indexes
-        if (nums[i] + nums[j] == target) {
-          return {i, j};
-        }
+          cout << nums[i] << " + " << nums[j] << endl;
+        // if (nums[i] + nums[j] == target) {
+        //   // return {i, j};
+        // }
+      }
+    }
     // If not found
     return {-1, -1};
   }
