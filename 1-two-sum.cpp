@@ -14,7 +14,7 @@ public:
       // j needs to always be one ahead of i
       for (int j = i + 1; j < nums.size(); ++j) {
         // If the numbers add to target, return indexes
-          cout << nums[i] << " + " << nums[j] << endl;
+        cout << nums[i] << " + " << nums[j] << endl;
         // if (nums[i] + nums[j] == target) {
         //   // return {i, j};
         // }
