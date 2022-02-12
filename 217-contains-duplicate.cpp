@@ -4,8 +4,8 @@
 #include <vector>
 
 class Solution {
- public:
-  bool containsDuplicate(std::vector<int>& nums) {
+public:
+  bool containsDuplicate(std::vector<int> &nums) {
     // Loop comparing each number to the others
     for (int i = 0; i < nums.size(); i++) {
       // Always 1 ahead of i

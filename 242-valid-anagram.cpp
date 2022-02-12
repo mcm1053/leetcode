@@ -12,8 +12,12 @@ public:
     // Sort both strings which allow easier comparison
     std::sort(s.begin(), s.end());
     std::sort(t.begin(), t.end());
-    // Return true if s = t, otherwise false
-    return s==t;
+    // Return true if s = t
+    if (s == t) {
+      return true;
+    } else {
+      return false;
+    }
   }
 };
 
