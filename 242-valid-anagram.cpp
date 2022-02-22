@@ -7,7 +7,7 @@
 #include <iostream>
 
 class Solution {
-public:
+ public:
   bool isAnagram(std::string s, std::string t) {
     // Sort both strings which allow easier comparison
     std::sort(s.begin(), s.end());

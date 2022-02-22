@@ -4,7 +4,7 @@
 #include <vector>
 
 class Solution {
-public:
+ public:
   bool containsDuplicate(std::vector<int> &nums) {
     // Loop comparing each number to the others
     for (int i = 0; i < nums.size(); i++) {

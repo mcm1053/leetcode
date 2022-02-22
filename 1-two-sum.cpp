@@ -7,7 +7,7 @@
 using namespace std;
 
 class Solution {
-public:
+ public:
   vector<int> twoSum(vector<int> &nums, int target) {
     // Loop through the vector adding each number to the rest
     for (int i = 0; i < nums.size(); ++i) {

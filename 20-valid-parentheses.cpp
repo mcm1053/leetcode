@@ -7,7 +7,7 @@
 #include <stack>
 
 class Solution {
-public:
+ public:
   bool isValid(std::string str) {
     // Create a stack to store string str
     std::stack<char> s;
@@ -27,32 +27,32 @@ public:
 
       // Use switch case to evaluate the ending bracket
       switch (str[i]) {
-      case ')':
-        // Store the element
-        x = s.top();
-        s.pop();
-        if (x == '{' || x == '[') {
-          return false;
-        }
-        break;
+        case ')':
+          // Store the element
+          x = s.top();
+          s.pop();
+          if (x == '{' || x == '[') {
+            return false;
+          }
+          break;
 
-      case '}':
-        // Store the element
-        x = s.top();
-        s.pop();
-        if (x == '(' || x == '[') {
-          return false;
-        }
-        break;
+        case '}':
+          // Store the element
+          x = s.top();
+          s.pop();
+          if (x == '(' || x == '[') {
+            return false;
+          }
+          break;
 
-      case ']':
-        // Store the element
-        x = s.top();
-        s.pop();
-        if (x == '(' || x == '{') {
-          return false;
-        }
-        break;
+        case ']':
+          // Store the element
+          x = s.top();
+          s.pop();
+          if (x == '(' || x == '{') {
+            return false;
+          }
+          break;
       }
     }
     // Return true if stack is empty
