@@ -13,15 +13,9 @@ public:
     // }
     // return count;
 
-    if ((high - low) % 2 == 0) {
-      return (high - low) / 2 + 1;
-    }
-
-    return ((high - low) / 2) + 1;
-
     // // A better solution
     // (https://zxi.mytechroad.com/blog/math/leetcode-1523-count-odd-numbers-in-an-interval-range/):
-    // return (high + 1) / 2 - low / 2;
+    return (high + 1) / 2 - low / 2;
   }
 };
 
